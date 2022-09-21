@@ -9,7 +9,7 @@ Description: Project 5, Desktop support app. Building to help practice MERN stac
 // Redux: helps us manage global state, installed Redux DevTools for Chrome
 
 
-npm i express dotenv mongoose colors bcryptjs //bcryptjs is used to hash passwords, mongoose is ODM, express is framework for js environment, dotenv is for environment variables, colors is for editor styling?
+npm i express dotenv mongoose colors bcryptjs //bcryptjs is used to hash passwords, mongoose is ODM, express is framework for js environment, dotenv is for environment variables, colors is for lines in console to be different colors
 
 npm i -D nodemon // allows server to hot reload
 "server": "nodemon backend/server.js" //add to scripts in package.json
