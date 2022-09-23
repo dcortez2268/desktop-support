@@ -16,4 +16,5 @@ npm i -D nodemon // allows server to hot reload
 
 // it is cleaner to have route that points to controller function that provides functionality rather than having all of the business logic inside the route
 
-
+JSON web tokens: key to accessing future content where you need to be authenticated
+npm i jsonwebtoken
