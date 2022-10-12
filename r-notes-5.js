@@ -19,3 +19,9 @@ npm i -D nodemon // allows server to hot reload for development env
 // JSON web tokens: 
 // allows you to protect routes
 npm i jsonwebtoken
+
+npx create-react-app frontend --template redux 
+//creates react app with redux boilerplate
+rm -rf .git //removes git repository created by create-react-app
+
+npm i concurrently//allows us to run two npm scripts at same time
