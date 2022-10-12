@@ -15,6 +15,7 @@ const registerUser = asyncHandler(async (req, res) => {
         res.status(400)
         throw new Error('Please include all fields')
     }
+
     //Find if user already exists
     const userExists = await User.findOne({ email })
 
@@ -55,7 +56,7 @@ const loginUser = asyncHandler(async (req, res) => {
 
     const user = await User.findOne({ email })
 
-    //check user password and passwords match
+    //check user and passwords match
     if (user && (await bcrypt.compare(password, user.password))) {
         res.status(200).json({
             _id: user._id,
@@ -69,6 +70,13 @@ const loginUser = asyncHandler(async (req, res) => {
     }
 })
 
+// @desc Get current user
+// @route /api/users/me
+// @access Private
+const getMe = asyncHandler(async (req, res) => {
+    res.send('me')
+})
+
 //Generate token
 const generateToken = (id) => {
     return jwt.sign({ id }, process.env.JWT_SECRET, {
@@ -79,4 +87,5 @@ const generateToken = (id) => {
 module.exports = {
     registerUser,
     loginUser,
+    getMe,
 }
