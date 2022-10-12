@@ -14,8 +14,8 @@ npm i express dotenv mongoose colors bcryptjs //bcryptjs is used to hash passwor
 npm i -D nodemon // allows server to hot reload for development env
 "server": "nodemon backend/server.js" //add to scripts in package.json
 
-// it is cleaner to have route that points to controller function that provides functionality rather than having all of the business logic inside the route
+// it is cleaner to have routes file that lists route and points to controller function that provides functionality rather than having all of the business logic inside the routes file
 
 // JSON web tokens: 
-// key to accessing future content where you need to be authenticated
+// allows you to protect routes
 npm i jsonwebtoken
