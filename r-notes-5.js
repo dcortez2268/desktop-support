@@ -25,3 +25,12 @@ npx create-react-app frontend --template redux
 rm -rf .git //removes git repository created by create-react-app
 
 npm i concurrently//allows us to run two npm scripts at same time
+
+slices:
+// are a way to keep all of the state in one place
+createAsyncThunk() // allows you to make calls to backend asynchronously
+//has reducers to manipulate state 
+//has extraReducers to manipulate state further
+
+// actions, like registering a user
+// diff, whenever state changes
