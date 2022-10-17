@@ -27,10 +27,15 @@ rm -rf .git //removes git repository created by create-react-app
 npm i concurrently//allows us to run two npm scripts at same time
 
 slices:
-// are a way to keep all of the state in one place
+// are a way to keep all of the state in one place, and any actions or functions
 createAsyncThunk() // allows you to make calls to backend asynchronously
 //has reducers to manipulate state 
-//has extraReducers to manipulate state further
+//has extraReducers to manipulate state further and add cases
 
 // actions, like registering a user
 // diff, whenever state changes
+
+import { useSelector, useDispatch } from 'react-redux'
+useSelector() // reducer allows us to bring values from global state
+const dispatch = useDispatch()
+dispatch(fnName) // allows us to send function call w args back to authService.js file
