@@ -42,5 +42,5 @@ useSelector() // useSelector reducer allows us to bring values from global state
 const dispatch = useDispatch()
 dispatch(fnName) // allows us to send function call w args back to authService.js file
 
-// todo: document flow from page to slice to service 
+// todo: document flow from page to slice to service, private routes,
 
