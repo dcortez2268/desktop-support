@@ -3,7 +3,6 @@ const asyncHandler = require('express-async-handler')
 const User = require('../models/userModel')
 const Ticket = require('../models/ticketModel')
 const Note = require('../models/noteModel')
-const { rawListeners } = require('../models/noteModel')
 
 // @desc Get notes for a ticket
 // @route GET /api/tickets/:ticketId/notes
@@ -28,7 +27,7 @@ const getNotes = asyncHandler(async (req, res) => {
     res.status(200).json(notes)
 })
 
-// @desc add notes for a ticket
+// @desc create ticket note
 // @route POST /api/tickets/:ticketId/notes
 // @access Private
 const addNote = asyncHandler(async (req, res) => {
