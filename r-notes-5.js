@@ -42,5 +42,6 @@ useSelector() // useSelector reducer allows us to bring values from global state
 const dispatch = useDispatch()
 dispatch(fnName) // allows us to send function call w args back to authService.js file
 
-// todo: document flow from page to slice to service, private routes,
-
+//deployed to heroku
+// heroku is a great PAAS, hosting platform for node.js and many other languages, 
+// created account, steps to deploy can be found at https://devcenter.heroku.com/articles/deploying-nodejs
