@@ -45,3 +45,9 @@ dispatch(fnName) // allows us to send function call w args back to authService.j
 //deployed to heroku
 // heroku is a great PAAS, hosting platform for node.js and many other languages, 
 // created account, steps to deploy can be found at https://devcenter.heroku.com/articles/deploying-nodejs
+// or can just google heroku cli, download
+// run: 
+heroku --version
+heroku login 
+//updated server.js bc we won't be working with react router and need to serve frontend
+//updated package.json file to create post build script to run on heroku once we push with git
